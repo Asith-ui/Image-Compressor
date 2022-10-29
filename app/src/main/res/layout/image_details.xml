@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/imagedetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/tw_cen"
+        android:text="Image Info"
+        android:textColor="#4E8B9B"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_below="@+id/imagedetails"
+        android:id="@+id/productImage"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/_4sdp" />
+
+    <TextView
+        android:id="@+id/productTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productImage"
+        android:fontFamily="@font/tw_cen"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_2sdp"
+        android:shadowColor="#575757"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Image Size"
+        android:textColor="#575757"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/setQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productTitleTv"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/tw_cen"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:padding="@dimen/_5sdp"
+        android:background="@color/darkTintBlue"
+        android:textColor="@color/exo_white"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/recoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qualitySet"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:alpha="4"
+        android:fontFamily="@font/tw_cen"
+        android:maxLines="5"
+        android:padding="@dimen/_2sdp"
+        android:text="(We Recommended 100)"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/_9sdp" />
+
+
+    <TextView
+        android:id="@+id/productDecTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recoo"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:alpha="4"
+        android:fontFamily="@font/tw_cen"
+        android:maxLines="5"
+        android:padding="@dimen/_2sdp"
+        android:text="Image Name"
+        android:textColor="#000"
+        android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:id="@+id/qualitySet"
+        android:layout_width="match_parent"
+        android:layout_below="@id/setQuality"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/tw_cen"
+            android:padding="@dimen/_2sdp"
+            android:text="Quality (Max 100) :-"
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/showQuality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/tw_cen"
+            android:padding="@dimen/_2sdp"
+            android:text="100"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/tw_cen"
+        android:padding="@dimen/_10sdp"
+        android:text="Save"
+        android:textColor="@color/darkTintBlue"
+        android:textSize="@dimen/_14sdp" />
+
+
+
+</RelativeLayout>

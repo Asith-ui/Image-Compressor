@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ps.android.imagecompressor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:name="com.ps.android.imagecompressor.App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name="com.ps.android.imagecompressor.SflashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ps.android.imagecompressor.privacy"
+            android:exported="false" />
+        <activity
+            android:name="com.ps.android.imagecompressor.Details"
+            android:exported="false" />
+        <activity
+            android:name="com.ps.android.imagecompressor.MainActivity"
+            android:exported="true"/>
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="U38_yu94OXgS5QXzNcbt9T7xSiiyyeJ9r3ry91EnDhSis20VB4nKgQlFFhrroWaqGSV1gXkIiTt-v2qTyUTRBV" />
+    </application>
+
+</manifest>

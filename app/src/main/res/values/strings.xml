@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Image Compressor</string>
+    <string name="small">Want to reduce your images to a very small size?</string>
+    <string name="intro">Then we welcome you to the Image compressior app presented by Pixel factory , Now click on the add image button and explore the app\'s features..</string>
+    <string name="image_compressor">image compressor</string>
+    <string name="we_create_the_foundation_to_build_your_future" >we create the foundation to build your future</string>
+</resources>

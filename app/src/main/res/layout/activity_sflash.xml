@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFF"
+    tools:context=".SflashActivity">
+
+    <ImageView
+        android:id="@+id/sflash_logo"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/com"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/tw_cen"
+        android:gravity="center_horizontal"
+        android:text="@string/image_compressor"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:alpha="6"
+        android:fontFamily="@font/segoeui"
+        android:text="@string/we_create_the_foundation_to_build_your_future"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="@dimen/_5sdp" />
+
+</RelativeLayout>
